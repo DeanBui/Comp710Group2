@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.duyqu.comp710group2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:id="@+id/txtUserName"
+        android:textSize="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUserName"
+        android:layout_alignBottom="@+id/txtUserName"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/txtUserName"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/txtPassword"
+        android:textSize="24dp"
+        android:layout_below="@+id/txtUserName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPassword"
+        android:layout_alignBottom="@+id/txtPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/txtUserName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/txtPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp"
+        android:onClick="login" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnRegister"
+        android:layout_alignTop="@+id/btnLogin"
+        android:layout_alignEnd="@+id/editTextStatus"
+        android:onClick="register" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/textView"
+        android:textSize="24dp"
+        android:layout_above="@+id/btnRegister"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextStatus"
+        android:layout_above="@+id/btnRegister"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:layout_alignEnd="@+id/editTextPassword" />
+</RelativeLayout>
