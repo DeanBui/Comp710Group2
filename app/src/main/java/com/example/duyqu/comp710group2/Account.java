@@ -3,7 +3,7 @@ package com.example.duyqu.comp710group2;
 /**
  * Created by duyqu on 2/28/2018.
  */
-//test Regina
+//test2 Regina
 public class Account {
 
     private String UserName;
