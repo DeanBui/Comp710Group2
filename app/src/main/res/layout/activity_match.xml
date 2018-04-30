@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchActivity">
+
+    <TextView
+        android:id="@+id/txtUserName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextName"
+        android:layout_alignParentStart="true"
+        android:text="Name"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextAge"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:text="Age"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button2"
+        android:onClick="nextMatch"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/textOccupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextOccupation"
+        android:layout_alignParentStart="true"
+        android:text="Occupation"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editTextOccupation"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="96dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="216dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="170dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:onClick="chat"
+        android:text="Chat" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:layout_alignBottom="@+id/txtUserName2"
+        android:layout_marginBottom="49dp"
+        android:layout_marginStart="-53dp"
+        android:layout_toEndOf="@+id/txtPassword"
+        app:srcCompat="@drawable/picture1" />
+
+</RelativeLayout>

@@ -57,25 +57,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnNext"
         android:layout_alignTop="@+id/btnLogin"
-        android:layout_alignEnd="@+id/editTextStatus"
+        android:layout_alignEnd="@+id/editTextOccupation"
         android:onClick="register" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Status"
-        android:id="@+id/textView"
+        android:id="@+id/textOccupation"
         android:textSize="24dp"
-        android:layout_above="@+id/btnRegister"
+        android:layout_above="@+id/btnNext"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextStatus"
-        android:layout_above="@+id/btnRegister"
+        android:id="@+id/editTextOccupation"
+        android:layout_above="@+id/btnNext"
         android:layout_alignStart="@+id/editTextPassword"
         android:layout_alignEnd="@+id/editTextPassword" />
 </RelativeLayout>

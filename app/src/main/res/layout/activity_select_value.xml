@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectValueActivity">
+    <CheckBox
+        android:id="@+id/checkBoxCommunication"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHonestly"
+        android:layout_below="@+id/checkBoxMobogamy"
+        android:text="Communication" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHonestly"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxFamily"
+        android:layout_below="@+id/checkBoxFamily"
+        android:text="Honestly" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="47dp"
+        android:text="Family and Friends" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMobogamy"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHonestly"
+        android:layout_below="@+id/checkBoxHonestly"
+        android:text="Monogamy" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/checkBoxHonestly"
+        android:text="Please Select Atleast Five Qualitics That Interest You In a Relationship" />
+
+    <CheckBox
+        android:id="@+id/checkBoxReligion"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHonestly"
+        android:layout_below="@+id/checkBoxCommunication"
+        android:text="Religion" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStability"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHonestly"
+        android:layout_below="@+id/checkBoxReligion"
+        android:text="Stability" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHonestly"
+        android:layout_below="@+id/checkBoxStability"
+        android:text="Success" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHonestly"
+        android:layout_below="@+id/checkBoxSuccess"
+        android:text="Wealth" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAdventure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHonestly"
+        android:layout_below="@+id/checkBoxWealth"
+        android:text="Adventure" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHonestly"
+        android:layout_below="@+id/checkBoxAdventure"
+        android:text="Love" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHumor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/checkBoxFamily"
+        android:layout_marginEnd="96dp"
+        android:text="Humor" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLeadership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHumor"
+        android:layout_below="@+id/checkBoxHumor"
+        android:text="Leadership" />
+
+    <CheckBox
+        android:id="@+id/checkBoxIntimacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHumor"
+        android:layout_below="@+id/checkBoxHonestly"
+        android:text="Intimacy" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSecurity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHumor"
+        android:layout_below="@+id/checkBoxMobogamy"
+        android:text="Security" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRespect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHumor"
+        android:layout_below="@+id/checkBoxCommunication"
+        android:text="Respect" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDependability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHumor"
+        android:layout_below="@+id/checkBoxReligion"
+        android:text="Dependability" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCleanliness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHumor"
+        android:layout_centerVertical="true"
+        android:text="Cleanliness" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPhysical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHumor"
+        android:layout_below="@+id/checkBoxSuccess"
+        android:text="Physical Appearance" />
+
+    <CheckBox
+        android:id="@+id/checkBoxThoughtfulness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHumor"
+        android:layout_below="@+id/checkBoxWealth"
+        android:text="Thoughtfulness" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUniqueness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBoxHumor"
+        android:layout_below="@+id/checkBoxAdventure"
+        android:text="Uniqueness" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="33dp"
+        android:onClick="submit"
+        android:text="Finish" />
+
+    <Button
+        android:id="@+id/buttonMatch"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginStart="36dp"
+        android:onClick="findMatch"
+        android:text="FIND MATCH"
+        android:visibility="invisible" />
+</RelativeLayout>

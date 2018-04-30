@@ -1,8 +1,6 @@
 package com.example.duyqu.comp710group2;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         userNameBox = (EditText) findViewById(R.id.editTextUserName);
         passwordBox = (EditText) findViewById(R.id.editTextPassword);
-        statusBox = (EditText) findViewById(R.id.editTextStatus);
+        statusBox = (EditText) findViewById(R.id.editTextOccupation);
     }
 
 
@@ -31,14 +29,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void login(View view) {
+
+
+    public void login(View view){
         LoginDB dbHandler = new LoginDB(this, null, null, 1);
         boolean result = false;
 
         result = dbHandler.loginCheck(userNameBox.getText().toString(), passwordBox.getText().toString());
 
+        if(result){
+            final Intent ProfileIntent = new Intent(this, UserProfileActivity.class);
+            startActivity(ProfileIntent);
+
+
+        }
+        else{
+
+            statusBox.setText("Login False");
+        }
 
     }
+
 }
 
 
