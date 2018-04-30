@@ -80,7 +80,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="13dp"
         android:background="#90CAF9"
-        app:srcCompat="@drawable/picture2" />
+        app:srcCompat="@drawable/Logo" />
 
     <EditText
         android:id="@+id/editTextPassword"
